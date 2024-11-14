@@ -1,0 +1,362 @@
+<!DOCTYPE html>   <!--everything checked-->
+<html>
+
+<head>
+    <!--viewport or vw = 1vw -> 1% of your current viewport -> if viewport=50cm
+    1vw = 0.5cm-->
+    <!--link we need to work with external css-->
+    
+    <link href="example_stylesheet.css" type="text/css" rel="stylesheet">
+    <style>
+        footer{
+            text-align: center;
+            padding: 5px;
+            background-color: darkorange;
+            color: darkviolet;
+        }
+        p{
+            font-family: Arial;
+        }
+
+        .xyz{
+            border: 20 px outset black;
+            background-color: yellow;
+            text-align: center ;
+        }
+
+        p#fall{
+            color: orange;
+        }
+
+        p.winter{
+            color: blue;
+        }
+
+    </style>
+    <title> Title of the page</title>
+    
+</head>
+
+<body class="bodyclass">
+    <p id="fall">It's autumn</p>
+    <p class="winter">It's winter</p>
+    <p class="spring">It's spring</p>
+
+    <div class="xyz">
+        <p>This is some text</p>
+        <h1>This is another part of it</h1>
+    </div>
+
+
+    This is the content of the page
+    <p class="xyz">this is a paragraph</p>
+    <p> another paragraph</p>
+    <p> another one</p>
+
+    <!-- This is a comment
+     and I can continue over multiple lines-->
+
+     <!--Headers -> <hx> tags -->
+    <h1>This is the biggest header, aka header 1</h1>
+    <h2>This is a second header</h2>
+    <h3> another header</h3>
+    <h4> and a little smaller</h4>
+    <h10> small header</h10>
+
+    <!--<br> for new line, no new paragraph
+    <hr/> for horizontal line-->
+    <!-- &nbsp for spaces-->
+    This is a text with a paragraph end <br>
+    and lots of spa&nbsp;ces and a horizontal line.
+    <hr/>
+
+    <p>
+        <b>This text is bold</b><br>
+        <i>This text is italic</i><br>
+        <u>This text is underlined</u><br>
+        <b><u><i> This text is a combination of all 3</i></u></b>
+    </p>
+
+    <strong> This text is also bold</strong>
+    <em>This a also italic</em>
+    <br>
+
+    <!--linking to files, different pages = hyperlinks -->
+    <!--open hyperlink in new tab -> add target="_blank"-->
+    <a href="text.html" target="_blank">Click here!</a>
+
+    <br>
+    <!--opeing up images-->
+    <a href="chatgpt.jpg">Click here</a> to open this specific images
+    <br>
+
+    <!--email a person through a link-->
+    <a href="mailto:anthony.coppens.thomasmore.be">Mail me!</a>
+    <br>
+
+    <!--open a website-->
+    <a href="http://www.thomasmore.be">click for website</a>
+    <br>
+
+    <!-- target another element in the same page??--> 
+     <a href="#Life">Life</a>
+     This is some example filler<br>
+     And this line too<br>
+
+     <!--second we want to navigate to-->
+     <h4>
+        <a id="Life">Life</a>
+     </h4>  This is the segment we went to! <br>
+
+     <!--IMAGES-->
+     <!--../ for every folder you go back use it 1 time?????
+     chatgpt.jpg is in current directory, ../chatgpt.jgp is in one folder previously
+     ../../chatgpt.jpg is in 2 folders up. to navigate deeper check below-->
+
+     <img src="images/chatgpt.jpg" alt="chatgpt" height="25%" width="25%">
+
+     <!-- to format your image either us x% or px-->
+      <br>
+     <!--audio ??????-->
+     <audio controls>
+        <source src="chimes.mp3" type="audio/mpeg">
+        browser might not support this element.
+        <!--<source src="Chimes" type="audio/ogg"-->
+    </audio>
+
+        <br>
+        <!--video-->
+        <video height="25%" width="25%" controls>
+            <source src="livingroom.mp4" type="video/mp4">
+            Browser might not support this element
+        </video>
+
+     <!--LIST-->
+     <!--creating a list -> 2 variants: UL: unordered list / OL: ordered list-->
+     <!-- unordered list (with bullets) -> ul tag-->
+      
+     <ul>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+     </ul>
+
+     <!-- ordered list (numeroté)-->
+      <ol>
+        <li> 1st item</li>
+        <li> 2nd item</li>
+        <li> 3rd item</li>
+      </ol>
+
+      <ol type="A">
+        <li> 1st item</li>
+        <li> 2nd item</li>
+        <li> 3rd item</li>
+      </ol>
+
+      <!-- ul possibilities: disc square circle-->
+
+      <ul type="square">
+        <li> first item</li>
+        <li> second item</li>
+        <li> third item</li>
+      </ul>
+
+     <!--nested lists-->
+      <ul type="circle">
+        <li> first item</li>
+        <ul type="square">
+            <li> 1.1</li>
+            <li> 2.2</li>
+            <li> 3.3</li>
+        </ul> 
+        <li> second item</li>    
+        <li> third item</li> 
+    </ul>
+
+    <!-- tables: tr= table row /td= table column-->
+    <!-- first row-->
+     <table borders="1">
+    <tr>
+        <td>first row, first column</td>
+        <td>first row, second column</td>
+     </tr>
+    </table>
+
+     <br>
+
+    <table borders="1">
+    <tr>
+        <td> first row, first column</td>
+        <td> first row, second column</td>
+    </tr>
+    <tr>
+        <td> second row, first column</td>
+        <td> second row, second column</td>
+    </tr>
+
+    </table>
+
+    <br>
+
+    <!--table with heading -> th -->
+    <table borders="1">
+        <tr>
+            <th> name</th>
+            <th> age</th>
+        </tr>
+        <tr>
+            <td> Anthony</td>
+            <td> 29 </td>
+        </tr>
+        <tr>
+            <td> Elke </td>
+            <td> 45 </td>
+        </tr>
+    </table>
+
+    <br>
+    <!--cellspacing = space of border-->
+    <table borders="1" cellspacing="20">
+        <tr>
+            <td> no space at all</td>
+        </tr>
+    </table>
+
+     <br>
+
+    <!--merging rows-->
+    <table borders="1">
+        <tr> 
+            <td rowspan="2"> second column</td>
+        </tr>
+        <tr></tr>
+        <td> first row, first column </td>
+            <td> second row, first column</td>
+        </tr>
+
+        <table borders="1">
+            <tr>
+              <th rowspan="3">Merged Column</th>
+              <th>Header 1</th>
+              <th>Header 2</th>
+            </tr>
+            <tr>
+              <td>Row 1, Column 2</td>
+              <td>Row 1, Column 3</td>
+            </tr>
+            <tr>
+              <td>Row 2, Column 2</td>
+              <td>Row 2, Column 3</td>
+            </tr>
+          </table>
+        
+    </table>
+    <br>
+
+
+    <!--merging columns (how to put the title in the middle??)-->
+    <table borders="1">
+        <tr>
+            <td colspan="2"> title</td>
+
+        </tr>
+        <tr>
+            <td> second row, first column</td>
+            <td> second row, second column</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- division ???-->
+    
+
+    <!-- Container elements -> starts on a new line and has it's complete height and width from the right-->
+
+    <div style="background-color: chocolate; color: white; padding: 2 0px;">
+        <h2>London</h2>
+        <p> London is the capital city of England and it is the morst populated city in the UK. It is a metropolitan
+            area of over 15 million inhabitants.
+        </p>
+    </div>
+
+    <div class="xyz">
+        <h2 Heading with style></h2>
+    </div>
+
+    <!-- inline elements: no new line-->
+     <p>The coloured text is an example of <span style="color:red; ">spans</span> tag.</p>
+
+     <!--iframe -> webpage inside of a webpage-->
+     <iframe src="http://www.windows93.net/"style="border:none;"></iframe>
+
+     <!--forms-->
+     <form action="", method="post">
+        Name:<br>
+        <input type="text" name="Name"><br>
+        Password:<br>
+        <input type="password" name="Password"><br>
+        <input type="submit" value="Click">
+     </form>
+
+     <form>
+        <input type="radio" name="gender" value="male" checked>Male<br>
+        <input type="radio" name="gender" value="female" >Female<br>
+        <input type="radio" name="gender" value="x" >X<br>
+        <input type="radio" name="gender" value="other" >Other<br>
+
+        <form>
+            textfield: <input type="text" name="text" size="40"><br>
+            checkmarks:<br><input type="checkbox" name="check" value="c1" checked>choice1<br>
+            <input type="checkbox" name="check" value="c2" >choice 2<br>
+            <input type="checkbox" name="check" value="c3" checked>choice 3<br>
+            textarea: <textaera rows="3" cols="30" name="txtar">Default text</textaera>
+
+            dropdownlist:
+            <select ,aùe="ddl">
+                <option>option1</option>
+                <option>option2</option>
+                <option>option3</option>
+            </select>
+
+            <br>
+
+            <button type="button" onclick="alert('Hello World!')">Click me!</button>
+            
+          
+     </form>
+
+    <!--other container elements-->
+    <h1>Heading 1</h1>
+    <p>This is random text</p>
+    <footer>
+        <p>Author: Anthony</p>
+        <p><a href="mailto:antonthony.coppens@thoamsmore.be">antonthony.coppens@thoamsmore.be
+        </a></p>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+      
+
+     
+
+
+
+
+

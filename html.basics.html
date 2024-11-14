@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Title of the page</title>
+</head>
+
+<body style="background-color:darkturquoise;" class="bodyclass">
+    This is the content of the page
+    <p> this is a paragraph</p>
+    <p> another paragraph</p>
+    <p> another one</p>
+
+    <!-- This is a comment
+     and I can continue over multiple lines-->
+
+     <!--Headers -> <hx> tags -->
+    <h1>This is the biggest header, aka header 1</h1>
+    <h2>This is a second header</h2>
+    <h3> another header</h3>
+    <h4> and a little smaller</h4>
+    <h10> small header</h10>
+
+    <!--<br> for new line, no new paragraph
+    <hr/> for horizontal line-->
+    <!-- &nbsp for spaces-->
+    This is a text with a paragraph end <br>
+    and lots of spa&nbsp;ces and a horizontal line.
+    <hr/>
+
+    <p>
+        <b>This text is bold</b><br>
+        <i>This text is italic</i><br>
+        <u>This text is underlined</u><br>
+        <b><u><i> This text is a combination of all 3</i></u></b>
+    </p>
+
+    <strong> This text is also bold</strong>
+    <em>This a also italic</em>
+    <br>
+
+    <!--linking to files, different pages = hyperlinks -->
+    <!--open hyperlink in new tab -> add target="_blank"-->
+    <a href="text.html" target="_blank">Click here!</a>
+
+    <br>
+    <!--opeing up images-->
+    <a href="chatgpt.jpg">Click here</a> to open this specific images
+    <br>
+
+    <!--email a person through a link-->
+    <a href="mailto:anthony.coppens.thomasmore.be">Mail me!</a>
+    <br>
+
+    <!--open a website-->
+    <a href="http://www.thomasmore.be">click for website</a>
+    <br>
+
+    <!-- target another element in the same page???--> 
+     <a href="#Life">Life</a>
+     This is some example filler<br>
+     And this line too<br>
+
+     <!--second we want to navigate to-->
+     <h4>
+        <a id="Life">Life</a>
+     </h4>  This is the segment we went to! <br>
+
+     <!--IMAGES-->
+     <!--../ for every folder you go back use it 1 time?????
+     chatgpt.jpg is in current directory, ../chatgpt.jgp is in one folder previously
+     ../../chatgpt.jpg is in 2 folders up. to navigate deeper check below-->
+
+     <img src="computing/jpg/chatgpt" alt="chatgpt.jpg" height="25%" width="25%">
+
+     <!-- to format your image either us x% or px-->
+      <br>
+     <!--audio ??????-->
+     <audio controls>
+        <source src="chimes.mp3" type="audio/mpeg">
+        browser might not support this element.
+        <!--<source src="Chimes" type="audio/ogg"-->
+    </audio>
+
+        <br>
+        <!--video-->
+        <video height="25%" width="25%" controls>
+            source src="livingroom.mp4" type="video/mp4">
+            Browser might not support this element
+        </video>
+
+     <!--LIST-->
+     <!--creating a list -> 2 variants: UL: unordered list / OL: ordered list-->
+     <!-- unordered list (with bullets) -> ul tag-->
+      
+     <ul>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+     </ul>
+
+     <!-- ordered list (numeroté)-->
+      <ol>
+        <li> 1st item</li>
+        <li> 2nd item</li>
+        <li> 3rd item</li>
+      </ol>
+
+      <!-- ul possibilities: disc square circle-->
+
+      <ul type="square">
+        <li> first item</li>
+        <li> second item</li>
+        <li> third item</li>
+      </ul>
+
+
+      <ul type="circle">
+        <li> first item</li>
+        <ul type="square">
+            <li> 1.1</li>
+            <li> 2.2</li>
+            <li> 3.3</li>
+        </ul> 
+        <li> second item</li>    
+        <li> third item</li> 
+    </ul>
+
+    <!-- tables: tr= table row /td= table column-->
+    <!-- first row-->
+     <table border="1">
+    <tr>
+        <td>first row, first column</td>
+        <td>first row, second column</td>
+     </tr>
+    </table>
+
+     <br>
+
+    <table border="1">
+    <tr>
+        <td> first row, first column</td>
+        <td> first row, second column</td>
+    </tr>
+    <tr>
+        <td> second row, first column</td>
+        <td> second row, second column</td>
+    </tr>
+
+    </table>
+
+    <br>
+
+    <!--table with heading -> th -->
+    <table border="1">
+        <tr>
+            <th> name</th>
+            <th> age</th>
+        </tr>
+        <tr>
+            <td> Anthony</td>
+            <td> 29 </td>
+        </tr>
+        <tr>
+            <td> Elke </td>
+            <td> 45 </td>
+        </tr>
+    </table>
+
+    <br>
+    <table border="1" cellspacing="20">
+        <tr>
+            <td> no space at all</td>
+        </tr>
+    </table>
+
+     <br>
+
+    <!--merging rows ??(comment mettre à gauche?)-->
+    <table border="1">
+        <tr> 
+            <td> first row, first column </td>
+            <td rowspan="2"> second column</td>
+        </tr>
+        <tr>
+            <td> second row, first column</td>
+        </tr>
+    </table>
+    <br>
+
+
+    <!--merging columns (how to put the title in the middle??)-->
+    <table border="1">
+        <tr>
+            <td colspan="2"> title</td>
+
+        </tr>
+        <tr>
+            <td> second row, first column</td>
+            <td> second row, second column</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- division ???-->
+    <div style="background-color: aquamarine; color: azure; padding:2 0px; text-align: center;">
+        <p>This text will have everything from my division class</p>
+    </div>
+
+    
+
+
+
+
+
+
+
+      
+
+     
+
+
+
+
+
